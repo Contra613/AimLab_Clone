@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{087C5AF7-2511-5943-E2B0-BC4F7E76EC0B}</ProjectGuid>
+    <ProjectGuid>{AA1B602B-B76F-21FF-E52E-49818179AAAC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,9 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Target.cs" />
-    <Compile Include="Assets\Scripts\TargetBounds.cs" />
+    <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Target\Target.cs" />
+    <Compile Include="Assets\Scripts\Target\TargetBounds.cs" />
+    <Compile Include="Assets\Scripts\Managers.cs" />
+    <Compile Include="Assets\Scripts\Managers\ResourcesManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
