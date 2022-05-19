@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    // UI
     public static GameManager Instance;
 
     private void Awake()

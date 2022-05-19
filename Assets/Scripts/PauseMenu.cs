@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject go_BaseUI;
+    [SerializeField] GameObject mouse_sensitivity;
 
     void Start()
     {
@@ -37,11 +39,6 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public void ClickOption()
-    {
-        Debug.Log("Option");
-    }
-
     public void ClickRestart()
     {
         SceneManager.LoadScene(0);
@@ -50,5 +47,12 @@ public class PauseMenu : MonoBehaviour
     public void ClickExit()
     {
         Application.Quit();
+    }
+
+    public void SetMouseSensitivity(float val)
+    {
+        if (!Application.isPlaying) return;
+
+        
     }
 }
